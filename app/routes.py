@@ -5,7 +5,13 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', title='Welcome')
+    return render_template('index.html')
+
+
+@app.route('/features')
+def features():
+    return render_template('features.html')
+
 #
 # @app.route('/alert/<int:id_signal>')
 # def alert(id_signal):

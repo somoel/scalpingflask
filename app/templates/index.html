@@ -1,20 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd/dist/antd.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/antd/dist/antd.min.js"></script>
+{% block title %}
+    Home - My Flask App
+{% endblock %}
 
-
-</head>
-    <body>
-    <h1>Ahora sí pude hostear esta cosa</h1>
-    <p>No se quien esté leyendo mucho, pero no sabe cuan feliz estoy.</p>
-    <Button class="ant-btn ant-btn-dashed">Este botón no sirve pa na</Button>
-    </body>
-</html>
+{% block content %}
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of your Flask app.</p>
+{% endblock %}
